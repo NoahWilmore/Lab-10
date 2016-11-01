@@ -18,9 +18,9 @@ class Hybrid
       ~Hybrid();
 
       bool isEmpty();
-      void enqueue(T* item);
+      void enqueue(T* item); //add and remove items in FIFO order
       T* dequeue();
-      ListDoublyLinkedIterator<T>* iterator();
+      ListDoublyLinkedIterator<T>* iterator(); //iterate over the items in the sorted order
 
 };
 
