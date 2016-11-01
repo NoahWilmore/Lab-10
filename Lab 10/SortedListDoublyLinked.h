@@ -76,23 +76,35 @@ T* SortedListDoublyLinked<T>::remove(DoubleNode<T>* curr)
    //remember to set loc
 
    T* item;
-
+   
    DoubleNode<T>* prev;
    DoubleNode<T>* after;
+   DoubleNode<T>* curr = loc;
+   
+   int compare = (*compare_items) (curr, item->getItem());
+   
+   
+   //special case: removing from an empty list
+   if(sze == 0 || item == NULL || compare == 0)
+   {
+      return;  //nothing to delete
+   }
+   
+   prev = curr->getPrev();
+   after = curr->getNext();
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+   if(prev == NULL)
+   {
+	   
+   }
+   else if(after == NULL)
+   {
+	   
+   }
+   else  //general remove
+   {
+	   
+   }
 
    sze--;
    delete curr;
